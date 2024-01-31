@@ -1,7 +1,7 @@
 # Project-2-Ctfd
 
 CTF Challenge Write-up Document
-x
+
 Flag 1:
 Method: Cross-site scripting (XSS)
 Payload: <script>alert("")</script>

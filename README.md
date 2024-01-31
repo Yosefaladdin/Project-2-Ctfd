@@ -5,13 +5,12 @@ CTF Challenge Write-up Document
 Flag 1:
 Method: Cross-site scripting (XSS)
 Payload: <script>alert("")</script>
-![Flag 1](/home/kali/Desktop/CTF/flag1.png)
-
+![Flag 1](images/flag1.png)
 
 Flag 2:
 Method: XSS with malformed script tags
 Payload: <SCRIPscriptT>alert(")</SCRIPscriptT>
-![Flag 1](/home/kali/Desktop/CTF/flag2.png)
+![Flag 2](images/flag2.png)
 
 
 Flag 3:

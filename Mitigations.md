@@ -38,7 +38,7 @@ Mitigation: Use strong session management practices, including secure, unique se
 Flag 15: Directory Traversal
 Mitigation: Validate user input to ensure only intended files can be accessed. Implement a strict allowlist of accessible paths and reject any requests that attempt to traverse directories.
 
-General Security Measures:
+# General Security Measures:
 Secure Coding Practices: Educate developers on secure coding practices to prevent common vulnerabilities.
 Regular Security Audits: Conduct regular code reviews and security audits to identify and mitigate vulnerabilities.
 Security Tools: Utilize security tools such as web application firewalls (WAFs), intrusion detection systems (IDS), and automated scanners to detect and block attacks.

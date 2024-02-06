@@ -1,6 +1,6 @@
-Mitigation Strategies
+# Mitigation Strategies
 
-Day 1
+# Day 1
 
 Flag 1 & 2: XSS Reflected
 Mitigation: Sanitize and validate all user input to ensure that it does not contain executable code. Implement Content Security Policy (CSP) headers to prevent the execution of malicious scripts.
@@ -39,13 +39,13 @@ Flag 15: Directory Traversal
 Mitigation: Validate user input to ensure only intended files can be accessed. Implement a strict allowlist of accessible paths and reject any requests that attempt to traverse directories.
 
 General Security Measures:
-# Secure Coding Practices: Educate developers on secure coding practices to prevent common vulnerabilities.
-# Regular Security Audits: Conduct regular code reviews and security audits to identify and mitigate vulnerabilities.
-# Security Tools: Utilize security tools such as web application firewalls (WAFs), intrusion detection systems (IDS), and automated scanners to detect and block attacks.
-# Patch Management: Keep all systems, applications, and libraries up to date with the latest security patches.
-# Awareness and Training: Provide security awareness training to all employees to recognize potential security threats and understand safe practices.
+Secure Coding Practices: Educate developers on secure coding practices to prevent common vulnerabilities.
+Regular Security Audits: Conduct regular code reviews and security audits to identify and mitigate vulnerabilities.
+Security Tools: Utilize security tools such as web application firewalls (WAFs), intrusion detection systems (IDS), and automated scanners to detect and block attacks.
+Patch Management: Keep all systems, applications, and libraries up to date with the latest security patches.
+Awareness and Training: Provide security awareness training to all employees to recognize potential security threats and understand safe practices.
 
-Day2 
+# Day2 
 Flag 1: WHOIS Data Exposure
 Mitigation: Ensure that sensitive information is not stored in publicly accessible WHOIS data. Use domain privacy services offered by most registrars to hide personal information.
 
@@ -77,9 +77,9 @@ Mitigation: Update Drupal to a version that patches CVE-2019-6340. Regularly aud
 Flag 12: CVE-2019-14287
 Mitigation: Ensure that the system is updated to patch the CVE-2019-14287 vulnerability. Regularly conduct system audits and user privilege reviews to enforce the principle of least privilege.
 
-General Recommendations:
-# Regular Audits: Conduct regular security audits and vulnerability assessments to identify and mitigate potential vulnerabilities.
-# Security Training: Provide security awareness training for all users to recognize and protect against phishing and other social engineering attacks.
-# Patching Policy: Develop and follow a strict patch management policy to ensure timely application of security patches.
-# Access Control: Implement strict access control measures, including two-factor authentication, to minimize the risk of unauthorized access.
-# Monitoring and Logging: Use security monitoring and logging tools to detect unusual activities that could indicate a breach or an attempted exploitation.
+# General Recommendations:
+Regular Audits: Conduct regular security audits and vulnerability assessments to identify and mitigate potential vulnerabilities.
+Security Training: Provide security awareness training for all users to recognize and protect against phishing and other social engineering attacks.
+Patching Policy: Develop and follow a strict patch management policy to ensure timely application of security patches.
+Access Control: Implement strict access control measures, including two-factor authentication, to minimize the risk of unauthorized access.
+Monitoring and Logging: Use security monitoring and logging tools to detect unusual activities that could indicate a breach or an attempted exploitation.

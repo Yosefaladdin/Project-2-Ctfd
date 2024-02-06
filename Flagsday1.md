@@ -47,8 +47,10 @@ Payload: login ' OR '1'='1' -- password ' OR '1'='1' --
 ![Flag 7](images/flag7.png)
 
 Flag 8:
-Method: Admin login bypass
-Action: Used admin username and password to login
+Location: Login.php (second field)
+Vulnerability: Sensitive data exposure
+Method/Payload to Exploit: The username and password are in the HTML, or you can view them by highlighting the webpage.
+Username: dougquaid Password: kuato
 
 ![Flag 8](images/flag8.png)
 
@@ -83,14 +85,17 @@ Payload: ;system('cat /etc/passwd')
 ![Flag 13](images/flag13.png)
 
 Flag 14:
-Method: Unauthorized access to admin data via URL manipulation
-Action: Accessed /admin_legal_data.php with the 'admin' parameter set to a specific value
+Location: admin_legal_data.php
+Vulnerability: Session management
+Payload to Exploit: The link to this page is provided when Flag 12 is acquired. To view the flag, you will need to test out different session IDs in the URL with Burp. (Intruder would be the most efficient.) 87 is the secret session ID that provides the flag (http://192.168.13.35/admin_legal_data.php?admin=87).
 
 ![Flag 14](images/flag14.png)
 
 Flag 15:
-Method: Exploiting the Mail Server by injecting commands
-Payload: www.example.com | ls -A; accessed /old_disclaimers directory after that
+Location: Disclaimer.php
+Vulnerability: Directory traversal
+Payload to Exploit: The hint on this page indicates this is the "new" disclaimer. Using the vulnerability from Flag 10 or Flag 11, you can run ls to see the old_disclaimers directory. Using that finding, change the URL to: http://192.168.13.35/disclaimer.php?page=old_disclaimers/disclaimer_1.txt
+Note that the resource changed from disclaimer_2.txt to disclaimer_1.txt, as this is the older version.
 
 ![Flag 15](images/flag15.png)
 
